@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
@@ -10,15 +11,15 @@
           extend: {
             animation: {
             'bounce': 'bounce 1s infinite',
-            'fade-in': 'fadeIn 0.5s ease-in-out', // Aqui você usa 'fade-in'
+            'fade-in': 'fadeIn 0.5s ease-in-out',
             'slide-in': 'slideIn 0.5s ease-in-out'
             },
             keyframes: {
-            fadeIn: { // Aqui o keyframe é 'fadeIn'
+            fadeIn: {
                 '0%': { opacity: '0', transform: 'translateY(20px)' },
                 '100%': { opacity: '1', transform: 'translateY(0)' }
             },
-            slideIn: { // Aqui o keyframe é 'slideIn'
+            slideIn: {
                 '0%': { opacity: '0', transform: 'translateX(-20px)' },
                 '100%': { opacity: '1', transform: 'translateX(0)' }
             }
@@ -100,6 +101,7 @@
             </div>
             <!--Cards dos serviços-->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
                 <!--Primeiro card-->
             <div class="bg-white p-8 rounded-2xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 group border border-gray-100 relative overflow-hidden">
                 <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-500 to-cyan-500"></div>
@@ -115,6 +117,7 @@
                         Formatação de computadores e notebooks com sistemas operacionais Windows, Linux e MacOS
                     </p>
                 </div>
+
                 <!--Segundo Card-->
                 <div class="bg-white p-8 rounded-2xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 group border border-gray-100 relative overflow-hidden">
                 <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-violet-600 to-fuchsia-500"></div>
@@ -132,16 +135,17 @@
                         Download, Instalação e Ativação de diferentes tipos de softwares, por exemplo, Pacote Office Completo
                     </p>
                 </div>
+
                 <!--Terceiro Card-->
                 <div class="bg-white p-8 rounded-2xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 group border border-gray-100 relative overflow-hidden">
-                <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-500 to-cyan-500"></div>
+                <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-fuchsia-900 to-purple-400"></div>
                 <div class="mb-6">
                     <div class="bg-blue-100 p-4 rounded-xl inline-block">
                         <img src="/assets/clean-svgrepo-com.svg" class="h-8 w-8 text-blue-600">
                     </div>
                 </div>
                     <h3 class="text-xl font-semibold text-gray-900 mb-4">
-                        Limpeza de máquinas
+                        Limpeza de Máquinas
                     </h3>
                     <p class="text-gray-700 leading-relax">
                         Limpezas completas de desktops e notebooks, podendo ser externas ou internas, removendo sujeiras e fazendo seu computador ficar brilhando!
@@ -160,12 +164,47 @@
                     </div>
                 </div>
                     <h3 class="text-xl font-semibold text-gray-900 mb-4">
-                        Upgrade de componentes
+                        Upgrade de Componentes
                     </h3>
                     <p class="text-gray-700 leading-relax">
                         Instalação de Placas de Vídeo, Coolers, Memórias RAM, HD's, SSD's e mais para dar um upgrade na sua máquina
                     </p>
                 </div>
+
+
+                <!--Quinto Card-->
+                <div class="bg-white p-8 rounded-2xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 group border border-gray-100 relative overflow-hidden">
+                <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-emerald-700 to-teal-500"></div>
+                <div class="mb-6">
+                    <div class="bg-teal-100 p-4 rounded-xl inline-block">
+                        <img src="/assets/clean-svgrepo-com.svg" class="h-8 w-8">
+                    </div>
+                </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">
+                        Troca de Pasta Térmica
+                    </h3>
+                    <p class="text-gray-700 leading-relax">
+                        Um procedimento muito eficaz para uma melhora do desempenho para máquinas um pouco antigas!
+                    </p>
+                </div>
+
+
+                <!--Sexto Card-->
+                <div class="bg-white p-8 rounded-2xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 group border border-gray-100 relative overflow-hidden">
+                <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-500 to-cyan-500"></div>
+                <div class="mb-6">
+                    <div class="bg-blue-100 p-4 rounded-xl inline-block">
+                        <img src="/assets/clean-svgrepo-com.svg" class="h-8 w-8 text-blue-600">
+                    </div>
+                </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">
+                        E Muito mais!
+                    </h3>
+                    <p class="text-gray-700 leading-relax">
+                        {Escrever algum textinho queridinho aqui}
+                    </p>
+                </div>
+
             </div>
         </div>
     </section>
